@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
-    "preinstall": "npm set audit false",
-    "postinstall": "cp env.example.js env.js",
-    "start": "webpack-dev-server --config webpack/dev.config.js --watch",
-    "build": "webpack --config webpack.config.js",
-    "build-production": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
-    "heroku-postbuild": "npm run build",
-    "precommit": "eslint src",
-    "prod": "NODE_ENV=production node server.js"
+    "start": "node src/index.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
